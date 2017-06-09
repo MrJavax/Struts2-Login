@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="dawi" namespace="/" extends="struts-default,json-default">
+		
+
+		<action name="listando" method="listar" class="action.ProductoAction">
+			<result name="ok">/listado.jsp</result>
+			<result name="error">/listado.jsp</result>
+		</action>
+
+
+
+		<action name="eliminarProd" method="eliminar" class="action.ProductoAction">
+			<result name="ok">/listado.jsp</result>
+			<result name="error">/listado.jsp</result>
+		</action>
+
+		<action name="cargaProd" method="cargar" class="action.ProductoAction">
+			<result name="ok">/actualizar.jsp</result>
+			<result name="error">/listado.jsp</result>
+		</action>
+
+		
+	
+	</package>
+
+</struts>

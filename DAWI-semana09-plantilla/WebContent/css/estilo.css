@@ -1,0 +1,11 @@
+div aside {
+	width: 30%;
+	height: auto;
+	background-color: aqua;
+	border-right: 1px solid;
+}
+div section {
+	width: 73%;
+	height: auto;
+	background-color: gray;
+}
